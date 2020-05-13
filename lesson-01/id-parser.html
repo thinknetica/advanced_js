@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Формат кода</h3>
+    <p>Шестнадцатиричный код AAAAAAAABBCDDDDDD</p>
+    <ul>
+        <li>A метка времени (timestamp в секундах)</li>
+        <li>B кластер</li>
+        <li>C тип</li>
+        <li>D идентификатор пользователя</li>
+    </ul>
+    <p>Все входные данные - целые десятичные числа</p>
+    </pre>
+    <script src="id-parser.js"></script>
+
+    <h3>Примеры данных для кодирования</h3>
+    <table>
+        <tr>
+            <th>timestamp</th>
+            <th>claster</th>
+            <th>type</th>
+            <th>user</th>
+        </tr>
+        <tr>
+            <td>1588056501</td>
+            <td>18</td>
+            <td>0</td>
+            <td>11468295</td>
+        </tr>
+        <tr>
+            <td>1588767280</td>
+            <td>3</td>
+            <td>15</td>
+            <td>15188622</td>
+        </tr>
+        <tr>
+            <td>1588045363</td>
+            <td>27</td>
+            <td>7</td>
+            <td>10631111</td>
+        </tr>
+    </table>
+
+    <h3>Документация:</h3>
+    <ul>
+        <li><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toString">Number.toString</a></li>
+    </ul>
+    
+</body>
+
+</html>
