@@ -1,3 +1,5 @@
+'use strict';
+
 const CHARCODE_A = 'A'.charCodeAt(0);
 
 /**

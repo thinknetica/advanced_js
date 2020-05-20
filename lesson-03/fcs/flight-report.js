@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Функция генерации отчета по рейсу
  *
@@ -6,10 +8,11 @@
  *  * проверка рейса
  *  * подсчет
  *
+ * @param {World} world
  * @param {Flight} flight номер рейса
  * @param {number} nowTime текущее время
  * @returns {Report} отчет
  */
-function flightReport(flight, nowTime) {
+function flightReport(world, flight, nowTime) {
 
 }

@@ -1,3 +1,5 @@
+'use strict';
+
 const result = addFlight(
     bigWorld,
     {
@@ -11,7 +13,7 @@ const result = addFlight(
 
 bigWorld = result.world;
 
-console.log(bigWorld)
+console.log(bigWorld);
 
 let res = buyTicket(bigWorld, 'BH118', makeTime(5, 10), 'Petrov I. I.');
 

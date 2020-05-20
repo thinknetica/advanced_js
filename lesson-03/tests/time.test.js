@@ -4,15 +4,19 @@
 // "34:67" - выдать ошибку
 
 describe('timeFormat', () => {
-    it('asdasd', () => {
+    it('empty test', () => {
     });
-    it('pm', () => {
+    it('3:03 pm', () => {
         const result = timeFormat('3:03 pm');
         assert.equal(result, '15:03');
     });
-    it('am and delimiter .', () => {
+    it('am and delimiter "."', () => {
         const result = timeFormat('03.00 am');
         assert.equal(result, '03:00');
+    });
+    it('12:00 pm', () => {
+        const result = timeFormat('12:99 pm');
+        assert.equal(result, '12:00');
     });
     it('13:00 pm incorect', () => {
         const result = timeFormat('13:00 pm');
@@ -29,10 +33,6 @@ describe('timeFormat', () => {
     it('12:00 am', () => {
         const result = timeFormat('');
         assert.equal(result, '');
-    });
-    it('12:00 pm', () => {
-        const result = timeFormat('12:99 pm');
-        assert.equal(result, '12:00');
     });
     it('00:00 am', () => {
         const result = timeFormat('00:00 am');
