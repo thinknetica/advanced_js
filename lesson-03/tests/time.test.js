@@ -15,8 +15,12 @@ describe('timeFormat', () => {
         assert.equal(result, '03:00');
     });
     it('12:00 pm', () => {
-        const result = timeFormat('12:99 pm');
+        const result = timeFormat('12:00 pm');
         assert.equal(result, '12:00');
+    });
+    it('12:00 am', () => {
+        const result = timeFormat('12:00 am');
+        assert.equal(result, '00:00');
     });
     it('13:00 pm incorect', () => {
         const result = timeFormat('13:00 pm');
