@@ -2,9 +2,9 @@
 // const keyCodeA = 'a'.charCodeAt(0);// let key = '';
 
 // do {
-//     const code = Math.floor(Math.random() * 26) + keyCodeA;
-//     const symbol = String.fromCharCode(code);
-//     console.log(code, symbol);
+//     const core = Math.floor(Math.random() * 26) + keyCodeA;
+//     const symbol = String.fromCharCode(core);
+//     console.log(core, symbol);
 //     if (key.indexOf(symbol) !== -1)
 //         continue;
 
@@ -36,4 +36,3 @@ for (let index = 0; index < text.length; index++) {
 }
 
 console.log(encoded);
- 
